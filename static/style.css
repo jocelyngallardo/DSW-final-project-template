@@ -8,3 +8,14 @@
 .topic {
   text-align: center;
 }
+
+/* Center text and colored header 708238*/
+.topic-header {
+  text-align: center;
+  background-color: #FCC201;
+}
+
+/* White background*/
+.about {
+  background-color: #FFFFFF;
+}
