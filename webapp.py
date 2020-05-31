@@ -110,7 +110,7 @@ def article_added():
 	db.news.insert_one({"title":request.form['articleTitle'], "content":request.form['articleText']})
 	return redirect(url_for('roboticsNews'))
 
-@app.route('/page1')
+@app.route('/about')
 def renderPage1():
 	if 'user_data' in session:
 		user_data_pprint = pprint.pformat(session['user_data'])#format the user data nicely
@@ -118,11 +118,11 @@ def renderPage1():
 		user_data_pprint = '';
 	return render_template('page1.html',dump_user_data=user_data_pprint)
 
-@app.route('/page2')
+@app.route('/makerSpace')
 def renderPage2():
 	return render_template('page2.html')
 
-@app.route('/page3')
+@app.route('/botball')
 def renderPage3():
 	return render_template('page3.html')
 
