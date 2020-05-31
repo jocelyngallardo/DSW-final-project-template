@@ -122,6 +122,10 @@ def renderPage1():
 def renderPage2():
 	return render_template('page2.html')
 
+@app.route('/page3')
+def renderPage3():
+	return render_template('page3.html')
+
 #the tokengetter is automatically called to check who is logged in.
 @github.tokengetter
 def get_github_oauth_token():
