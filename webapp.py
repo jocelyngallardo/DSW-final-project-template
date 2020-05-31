@@ -65,7 +65,7 @@ def login():
 @app.route('/logout')
 def logout():
 	session.clear()
-	flash('You were logged out.')
+	flash('You were logged out', 'message')
 	return redirect('/')
 
 @app.route('/login/authorized')
@@ -73,7 +73,7 @@ def authorized():
 	resp = github.authorized_response()
 	if resp is None:
 		session.clear()
-		flash('Access denied: reason=' + request.args['error'] + ' error=' + request.args['error_description'] + ' full=' + pprint.pformat(request.args), 'error')			
+		flash('Access denied: reason=' + request.args['error'] + ' error=' + request.args['error_description'] + ' full=' + pprint.pformat(request.args), 'warning')			
 	else:
 	
 		try:
@@ -83,7 +83,7 @@ def authorized():
 			#pprint.pprint(vars(github['api/2/accounts/profile/']))
 			
 			if session['user_data']['login'] in validUsers:
-				flash('You were successfully logged in as ' + session['user_data']['login'] + '.')
+				flash('You were successfully logged in as ' + session['user_data']['login'], 'success')
 			else:
 				session.clear()
 				flash('Not an admin. Contact club officials for access.', 'error')
