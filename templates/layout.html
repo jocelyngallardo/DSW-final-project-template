@@ -31,9 +31,9 @@
       {% if messages %}
          {% for category, message in messages %}
             {% if category == "message" %}
-              {% set cls = "alert alert-success alert-dismissible" %}
+              {% set cls = "alert alert-success alert-dismissible fade in" %}
             {% elif category == "error" %}
-              {% set cls = "alert alert-danger alert-dismissible" %}
+              {% set cls = "alert alert-danger alert-dismissible fade in " %}
             {% endif %}
             <div class="{{ cls }}">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
