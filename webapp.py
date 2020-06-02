@@ -98,8 +98,8 @@ def roboticsNews():
 def get_articles(): #returns code to insert articles into html page
 	toReturn=''
 	for articles in collection.find():
-		toReturn=Markup("<p>"+ articles['content'] +"</p>") + toReturn
-		toReturn=Markup("<h2>"+ articles['title'] +"</h2>") + toReturn
+		toReturn=Markup("<div class='.content'><p>"+ articles['content'] +"</p></div>") + toReturn
+		toReturn=Markup("<div class='.title'><h2>"+ articles['title'] +"</h2></div>") + toReturn
 	return toReturn
 
 @app.route('/articleAdded', methods=['GET','POST'])
