@@ -31,13 +31,13 @@
       {% if messages %}
         {% for category, message in messages %}
           {% if category == "message" %}
-            {% set cls = "alert alert-info alert-dismissible fade in" %} 
+            {% set cls = "alert alert-info alert-dismissible" %} 
           {% elif category == "error" %}
-            {% set cls = "alert alert-danger alert-dismissible fade in" %}
+            {% set cls = "alert alert-danger alert-dismissible" %}
           {% elif category == "warning" %}
-            {% set cls = "alert alert-warning alert-dismissible fade in" %}
+            {% set cls = "alert alert-warning alert-dismissible" %}
           {% elif category == "success" %}
-            {% set cls = "alert alert-success alert-dismissible fade in" %}
+            {% set cls = "alert alert-success alert-dismissible" %}
           {% endif %}
          <div class="{{ cls }}"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>{{message}}</div>
         {% endfor %}
