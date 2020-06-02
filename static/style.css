@@ -9,18 +9,22 @@
 /* Header */
 .Header {
   text-align: center;
-  font-family: "Times New Roman", Times, serif; font-size: 128px;
+  font-family: "Times New Roman", Times, serif; font-size: 115px;
 }
 
-/* Center text */
+/* Content on pages*/
 .topic {
   text-align: center;
+  font-family: "Times New Roman", Times, serif; font-size: 20px;
 }
 
-/* Center text and colored header 708238*/
+/* Headers for content on page */
 .topic-header {
   text-align: center;
-  background-color: #708238;
+  background-color: #20913e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Times New Roman", Times, serif; font-size: 42px;
 }
 
 /* White background*/
