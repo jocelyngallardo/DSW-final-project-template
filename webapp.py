@@ -99,7 +99,7 @@ def get_articles(): #returns code to insert articles into html page
 	toReturn=''
 	for articles in collection.find():
 		toReturn=Markup("<p class='.content'>"+ articles['content'] +"</p>") + toReturn
-		toReturn=Markup("<h2 class='.title>"+ articles['title'] +"</h2>") + toReturn
+		toReturn=Markup("<h2 class='.title'>"+ articles['title'] +"</h2>") + toReturn
 	return toReturn
 
 @app.route('/articleAdded', methods=['GET','POST'])
