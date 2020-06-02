@@ -1,3 +1,5 @@
+
+
 /* Make the image fully responsive */
   .carousel-inner img {
     width: 100%;
@@ -7,7 +9,7 @@
 /* Header */
 .Header {
   text-align: center;
-  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 128px;
+  font-family: "Lucida Console", Courier, monospace; font-size: 128px;
 
 /* Center text */
 .topic {
