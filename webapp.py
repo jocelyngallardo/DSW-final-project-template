@@ -1,6 +1,3 @@
-
-
-
 from flask import Flask, redirect, url_for, session, request, jsonify, render_template, flash, Markup
 from flask_apscheduler import APScheduler
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -44,7 +41,7 @@ collection = db['news']
 
 print("connected to db")
 
-validUsers=['jocelyngallardo', 'LucaCC', 'kedehlsen', 'sky-adams']
+validUsers=['jocelyngallardo', 'LucaCC', 'kedehlsen', 'sky-adams', 'JoyP3231']
 
 #context processors run before templates are rendered and add variable(s) to the template's context
 #context processors must return a dictionary 
