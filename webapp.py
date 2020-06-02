@@ -42,7 +42,7 @@ collection = db['news']
 
 print("connected to db")
 
-validUsers=['jocelyngallardo', 'LucaCC', 'kedehlsen', 'sky-adams', 'JoyP3231']
+validUsers=['jocelyngallardo', 'LucaCC', 'kedehlsen', 'sky-adams', 'JoyP321']
 
 #context processors run before templates are rendered and add variable(s) to the template's context
 #context processors must return a dictionary 
