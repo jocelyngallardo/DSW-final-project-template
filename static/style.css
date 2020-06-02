@@ -21,9 +21,11 @@
 /* Headers for content on page */
 .topic-header {
   text-align: center;
-  background-color: #20913e;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #014f16;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
   font-family: "Times New Roman", Times, serif; font-size: 42px;
 }
 
