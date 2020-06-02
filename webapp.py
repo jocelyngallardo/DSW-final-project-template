@@ -106,7 +106,7 @@ def get_articles(): #returns code to insert articles into html page
 @app.route('/articleAdded', methods=['GET','POST'])
 def article_added():
 	db.news.insert_one({"title":request.form['articleTitle'], "content":request.form['articleText']})
-	flash('You successfully adthe news post ' + articles['title'] , 'success')
+	flash('You successfully adthe news post ' + request.form['articleTitle'] , 'success')
 	return redirect(url_for('roboticsNews'))
 
 @app.route('/page1')
